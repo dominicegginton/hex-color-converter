@@ -1,0 +1,42 @@
+{
+  "name": "hex-color-converter",
+  "version": "0.0.0",
+  "description": "Lightweight module for converting RGB(A) values to hexadecimal colors",
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "standard",
+    "test": "jest",
+    "coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dominicegginton/hex-color-converter.git"
+  },
+  "keywords": [
+    "color",
+    "opacity",
+    "hex",
+    "rgb",
+    "rgba",
+    "convert",
+    "hexadecimal",
+    "alpha"
+  ],
+  "author": {
+    "name": "Dominic Egginton",
+    "email": "dominic.egginton@gmail.com",
+    "url": "https://dominicegginton.dev"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dominicegginton/hex-color-converter/issues"
+  },
+  "homepage": "https://github.com/dominicegginton/hex-color-converter#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "standard": "^16.0.2"
+  },
+  "dependencies": {
+    "hex-color-opacity": "^0.1.1"
+  }
+}
