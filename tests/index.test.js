@@ -33,6 +33,12 @@ describe('rgb(a) color validation', () => {
     expect(() => convert('rgb(0,0,a,0)')).toThrow(error)
     expect(() => convert('rgb(0,0,0,a)')).toThrow(error)
     expect(() => convert('rgb(0, 0, 0, a)')).toThrow(error)
+    expect(() => convert('#F')).toThrow(error)
+    expect(() => convert('#FF')).toThrow(error)
+    expect(() => convert('#FFFF')).toThrow(error)
+    expect(() => convert('#FFFFF')).toThrow(error)
+    expect(() => convert('#FFFFFFF')).toThrow(error)
+    expect(() => convert('#FFFFFFFFF')).toThrow(error)
   })
 })
 
@@ -54,5 +60,11 @@ describe('rgb(a) conversion should be applied correctly', () => {
     expect(convert('rgba(0, 255, 0, 0)')).toEqual('#00FF0000')
     expect(convert('rgba(0, 0, 255, 0.1)')).toEqual('#0000FF1A')
     expect(convert('rgba(255, 255, 255, 0.01)')).toEqual('#FFFFFF03')
+  })
+
+  test('hexadecimal color values should be accepted and returned unmodified', () => {
+    expect(convert('#FFF')).toEqual('#FFF')
+    expect(convert('#FFFFFF')).toEqual('#FFFFFF')
+    expect(convert('#FFFFFFFF')).toEqual('#FFFFFFFF')
   })
 })
