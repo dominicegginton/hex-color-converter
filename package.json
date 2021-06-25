@@ -1,6 +1,6 @@
 {
   "name": "hex-color-converter",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Lightweight module for converting RGB(A) values to hexadecimal colors",
   "main": "lib/index.js",
   "engines": {
